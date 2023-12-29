@@ -1,6 +1,7 @@
 #Write a shell script that accepts a path name creates all the components in that path name as directories. For example, if the script is named 
 #mpc, then command mpc a/b/c/d should create directories a, a/b, a/b/c, a/b/c/d.
-echo "enter the pathname" read p
+echo "enter the pathname" 
+read p
 i=1 
 j=1
 len=`echo $p|wc -c` 
