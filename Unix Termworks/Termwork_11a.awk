@@ -9,8 +9,10 @@
 
 
 BEGIN {print"Total number of books sold in each category"}
-{books [ $1 ]+=$2} END { for(item in books)
-{ printf("\t%-17s %ls %-5d\n", item, "=", books[item]) total+=books[item]
+{books [ $1 ]+=$2} 
+END { for(item in books)
+{ printf("\t%-17s %ls %-5d\n", item, "=", books[item]) 
+total+=books[item]
 }
 printf("%-17s %ls %-5d\n", "Total books sold", "=", total)
 }
