@@ -7,8 +7,10 @@ then
 else
  ls -l $1 > f1	#Line5
  x=`cut -c2-10 f1`	#Line6 
-echo $x
- ls -l $2 > f2 y=`cut -c2-10 f2` echo $y
+ echo $x
+ ls -l $2 > f2 
+ y=`cut -c2-10 f2` 
+ echo $y
  echo " "
  if [ $x = $y ] 
  then
